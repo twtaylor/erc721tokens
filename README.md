@@ -22,6 +22,12 @@ miner.setEtherbase("3a3d39d2ae53eb539b44f72f8bb13f01bd9e0f21")
 
 miner.start()
 
+> Start running
+
+# Compiling
+
+solcjs --bin --abi  sol/greeter.sol -o solo
+
 # To connect to multiple nodes
 
 geth --nodiscover --networkid 4444 --port 3000 --datadir "ethsfChain" console 
